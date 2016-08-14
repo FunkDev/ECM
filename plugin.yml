@@ -1,0 +1,38 @@
+name: EasyChatManager
+main: net.funkemunky.ECM.Core
+description: EastChatManager for people you who easy!
+version: 1.2.5
+author: funkemunky
+softdepend: [Vault]
+commands:
+  easychatmanager:
+    description: Main cmd for people who like easy.
+    aliases: [ecm]
+  clearchat:
+    description: Clear the chat!
+    aliases: [cc, kc, killchat]
+  mutechat:
+    description: Mute/Unmute the chat!
+    aliases: [silencechat, silence]
+permissions:
+  ecm.help:
+    default: true
+    description: ECM main command node.
+  ecm.reload:
+    default: op
+    description: Ecm reload command node.
+  ecm.clearchat:
+    default: op
+    description: ClearChat node.
+  ecm.clearchat.others:
+    default: op
+    description: Clear a player's chat.
+  ecm.clearchat.bypass:
+    default: false
+    description: Bypass clearchat!
+  ecm.mutechat:
+    default: op
+    description: Mute the chat!
+  ecm.mutechat.bypass:
+    default: op
+    description: Bypass the chat mute!
