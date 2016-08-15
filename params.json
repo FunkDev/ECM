@@ -1,6 +1,0 @@
-{
-  "name": "EasyChatManager",
-  "tagline": "A chat management plugin made for people who like easy.",
-  "body": "# EasyChatManger\r\nEasyChatManager or ECM is a chat management plugin made for people who like easy. This plugin is still in development but will have some major things added to it I think you all will enjoy. From clearing chat to changing chat format, ECM has your back.\r\n\r\n## TODO List\r\n- Spy on commands\r\n- Pergroup chat formats.\r\n- Messaging System\r\n- Mailing System\r\n\r\n## Current Features\r\n- Mute the chat\r\n- Clear the chat\r\n- Format chat (with colors)\r\n- and MORE to come\r\n",
-  "note": "Don't delete this file! It's used internally to help with page regeneration."
-}
