@@ -9,13 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ECM</title>
+    <title>EasyChatManager</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/landing-page.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -49,13 +50,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#about">About</a>
+                        <a href="#about">Home</a>
                     </li>
                     <li>
-                        <a href="#services">Tutorial</a>
+                        <a href="#services">About</a>
                     </li>
                     <li>
-                        <a href="#contact">Contact</a>
+                        <a href="#contact">Funk's Stuff</a>
                     </li>
                 </ul>
             </div>
@@ -78,13 +79,13 @@
                         <hr class="intro-divider">
                         <ul class="list-inline intro-social-buttons">
                             <li>
-                                <a href="https//funkemunky.enjin.com" class="btn btn-default btn-lg"><i class="fa fa-home fa-fw"></i> <span class="network-name">Funkemunky</span></a>
+                                <a href="https://www.spigotmc.org/resources/easychatmanager-easy-configurable-1-8.27210/" class="btn btn-default btn-lg"><i class="fa fa-gavel fa-fw"></i> <span class="network-name">Spigot</span></a>
                             </li>
                             <li>
-                                <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                                <a href="https://github.com/FunkDev/ECM/" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                             </li>
                             <li>
-                                <a href="http://twitter.com/funkemunky" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                                <a href="http://funkemunky.enjin.com" class="btn btn-default btn-lg"><i class="fa fa-home fa-fw"></i> <span class="network-name">Developer</span></a>
                             </li>
                         </ul>
                     </div>
@@ -103,45 +104,50 @@
     <div class="content-section-a">
 
         <div class="container">
+		    <h2>Tutorial</h2>
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">EasyChatManager Tutorial:</h2>
-					<code>
-                    <p>####################################################################</p>
-					<p>#ECM Version 1.2 for Minecraft 1.8!                                #</p>
-					<p>#If you find any bugs please tell me on the plugin page            #</p>
-					<p>#Here: https://www.spigotmc.org/resources/easychatmanager.27210/   #</p>
-					<p>####################################################################</p>
+					 <input type="checkbox"  id="spoiler2" /> 
+  <label for="spoiler2" >Click Me!</label>
+<div class="spoiler">
+                    <h3 class="section-heading">Config:</h2>
+                    <p id="spoiler">####################################################################</p>
+					<p id="spoiler">#ECM Version 1.2 for Minecraft 1.8!                                #</p>
+					<p id="spoiler">#If you find any bugs please tell me on the plugin page            #</p>
+					<p id="spoiler">#Here: https://www.spigotmc.org/resources/easychatmanager.27210/   #</p>
+					<p id="spoiler">####################################################################</p>
 					<p></p>
-					<p>#Use '&' for color codes. Like '&a' for green!</p>
+					<p id="spoiler">#Use '&' for color codes. Like '&a' for green!</p>
 					<p></p>
-					<p># Here you can change the way the chat looks!</p>
-					<p># Use %s for the username/message.</p>
-					<p># The first %s will be the username, and the second %s will be the message.</p>
-					<p>ChatFormat: '%prefix% <%displayname%> %suffix% %message%'</p>
+					<p id="spoiler"># Here you can change the way the chat looks!</p>
+					<p id="spoiler"># Use %s for the username/message.</p>
+					<p id="spoiler"># The first %s will be the username, and the second %s will be the message.</p>
+					<p id="spoiler">ChatFormat: '%prefix% <%displayname%> %suffix% %message%'</p>
 					<p></p>
-					<p>#Make a format for a certain group!</p>
-					<p>GroupFormats:</p>
-					<p>  default: '%prefix% <%displayname%> %suffix% &7&l%message%'</p>
-					<p>  Admin: '%prefix% <%displayname%> %suffix% &c&l%message%'</p>
+					<p id="spoiler">#Set any messages you want the plugin to send!</p>
+					<p id="spoiler"># MAKE SURE TO ONLY CHANGE THE MESSAGES, NOT THE OPTIONS!</p>
+					<p id="spoiler">Messages:</p>
+					<p id="spoiler">  Prefix: '&8[&6&lEasyChatManager&8] &r'</p>
+					<p id="spoiler">  GlobalChatClear: '&8Chat has been cleared by &6%CLEARER%&8!'</p>
+					<p id="spoiler">  PlayerChatClear: '&8Your chat was cleared by &6%CLEARER%&8!'</p>
+					<p id="spoiler">  MuteChat: '&8Chat was muted by &6%MUTER%&8!'</p>
+					<p id="spoiler">  UnmuteChat: '&8Chat was unmuted  by &6%MUTER%&8!'</p>
+					<p id="spoiler">  ChatIsMuted: '&8Shh quiet, the chat is sleeping.'</p>
+					<p id="spoiler">  NoPermission: '&cSorry but you do not have permission for this!'`</p>
 					<p></p>
-					<p>#Set any messages you want the plugin to send!</p>
-					<p># MAKE SURE TO ONLY CHANGE THE MESSAGES, NOT THE OPTIONS!</p>
-					<p>Messages:</p>
-					<p>  Prefix: '&8[&6&lEasyChatManager&8] &r'</p>
-					<p>  GlobalChatClear: '&8Chat has been cleared by &6%CLEARER%&8!'</p>
-					<p>  PlayerChatClear: '&8Your chat was cleared by &6%CLEARER%&8!'</p>
-					<p>  MuteChat: '&8Chat was muted by &6%MUTER%&8!'</p>
-					<p>  UnmuteChat: '&8Chat was unmuted  by &6%MUTER%&8!'</p>
-					<p>  ChatIsMuted: '&8Shh quiet, the chat is sleeping.'</p>
-					<p>  NoPermission: '&cSorry but you do not have permission for this!'`</p>
+					<h3 class="section-heading">Commands and Permissions:</h2>
 					<p></p>
-					</code>
-                </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/ipad.png" alt="">
+					<p id="spoiler">ecm.help - /ecm</p>
+					<p id="spoiler">ecm.reload - /ecm reload</p>
+					<p id="spoiler">ecm.clearchat - /clearchat</p>
+					<p id="spoiler">ecm.clearchat.others - /clearchat [player]</p>
+					<p id="spoiler">ecm.clearchat.bypass - Bypass the clearchat!</p>
+					<p id="spoiler">ecm.mutechat - /mutechat</p>
+					<p id="spoiler">ecm.mutechat.bypass - Bypass the chat mute!</p>
+					<p></p>
+					</div>
                 </div>
             </div>
 
@@ -159,11 +165,11 @@
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">3D Device Mockups<br>by PSDCovers</h2>
-                    <p class="lead">Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!</p>
+                    <h2 class="section-heading">Manage Chat Effortlessly</h2>
+                    <p class="lead">EasyChatManager was specfically designed to be fast, easy, and efficient. Even a 6 year old can understand the plugin!</p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <img class="img-responsive" src="img/dog.png" alt="">
+                    <img class="img-responsive" src="http://www.appsgalery.com/pictures/000/032/-uel--og--refueling--32982.png" alt="">
                 </div>
             </div>
 
@@ -181,11 +187,11 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Google Web Fonts and<br>Font Awesome Icons</h2>
-                    <p class="lead">This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.</p>
+                    <h2 class="section-heading">Fantastic Support</h2>
+                    <p class="lead">Funkemunky is always on the Spigot Forums to give fast and helpful responses. Never will you be stumped by anything again!</p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <img class="img-responsive" src="img/phones.png" alt="">
+                    <img class="img-responsive" src="http://www.ca.com/gb/services-support/ca-support/_jcr_content/solution/background_style_b14/background-style-par/structure_two_column/two-columns-one/background_style_6e7/background-style-par/adaptiveimage_2a26.img.620.high.png/1461235285948.png" alt="">
                 </div>
             </div>
 
@@ -202,18 +208,18 @@
 
             <div class="row">
                 <div class="col-lg-6">
-                    <h2>Connect to Start Bootstrap:</h2>
+                    <h2>Funk's Stuff:</h2>
                 </div>
                 <div class="col-lg-6">
                     <ul class="list-inline banner-social-buttons">
                         <li>
-                            <a href="https://twitter.com/SBootstrap" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+                            <a href="https://twitter.com/funkemunky" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
                         </li>
                         <li>
-                            <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                            <a href="https://github.com/FunkDev" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                         </li>
                         <li>
-                            <a href="#" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
+                            <a href="#" class="btn btn-default btn-lg"><i class="fa fa-youtube fa-fw"></i> <span class="network-name">Youtube</span></a>
                         </li>
                     </ul>
                 </div>
@@ -240,14 +246,13 @@
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#services">Services</a>
+                            <a href="#services">Tutorial</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#contact">Contact</a>
+                            <a href="#contact">Funk's Stuff</a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
                 </div>
             </div>
         </div>
@@ -259,10 +264,52 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 	<style>
-	code p{
-	  background-color: gray;
-	}
+	input[id^="spoiler"]{
+ display: none;
+}
+input[id^="spoiler"] + label {
+  display: block;
+  width: auto;
+  margin: 0 auto;
+  padding: 5px 20px;
+  background: gray;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
+input[id^="spoiler"]:checked + label {
+  color: #333;
+  background: #eee;
+}
+input[id^="spoiler"] ~ .spoiler {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  margin: 10px auto 0; 
+  padding: 10px; 
+  background: #gray;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: all .6s ease-in;
+}
+input[id^="spoiler"]:checked + label + .spoiler{
+  opacity: 1;
+  max-height: 2000px;
+  padding: 10px;
+  transition: max-height .6s ease-out;
+}
+#spoiler {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 12px;
+  color: gray;
+}
+
 	</style>
+	
 
 </body>
 
